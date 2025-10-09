@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery a img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>My Screenshot Gallery</h1>
+    <p>Click on a thumbnail to view the full-sized screenshot</p>
+
+    <div class="gallery">i
+        <a href="C:\Users\kiran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 211556.png"target="_blank">
+            <img src="C:\Users\kiran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 211556.png"alt=Screenshot 1">
+        </a>
+        <a href="C:\Users\kiran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 211627.png"target="_blank">
+
+            <img src="C:\Users\kiran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 211627.png" alt="Screenshot 2">
+        </a>
+        <a href="C:\Users\kiran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 211739.png" target="_blank">
+            <img src="C:\Users\kiran\OneDrive\Pictures\Screenshots\Screenshot 2025-07-15 211739.png" alt="Screenshot 3">
+        </a>
+    </div>
+</body>
+</html>

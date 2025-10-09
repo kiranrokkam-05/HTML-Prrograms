@@ -1,0 +1,11 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.external-text {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #009688; /* Teal */
+}

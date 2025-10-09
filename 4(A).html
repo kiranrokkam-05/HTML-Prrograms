@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="4(A).css">
+</head>
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <p class="simple-text">This paragraph is styled by an **element selector** and a **class selector**.</p>
+    <p id="unique-text">This text is styled using an **ID selector**, which is unique to this element.</p>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>The headings are styled by a **group selector**.</p>
+    
+    <div class="parent">
+        <p>This is a **descendant selector** paragraph inside the div.</p>
+        <span>
+            <p>This paragraph is also a descendant, but not a direct child.</p>
+        </span>
+    </div>
+    <div class="parent-child">
+        <p>This is a **child selector** paragraph, a direct child of the div.</p>
+        <p>This is another direct child paragraph.</p>
+    </div>
+    <h2>Adjacent Sibling</h2>
+    <p>This is styled by an **adjacent sibling selector** because it immediately follows the h2.</p>
+    <p>This is not styled by the adjacent sibling selector.</p>
+    <p>This is styled by a **general sibling selector** because it follows the h2 somewhere in the same level.</p>
+    <div>Another element.</div>
+    <p>This is also styled by the general sibling selector.</p>
+
+    <a href="#">This link is styled by a **pseudo-class selector** when you hover over it.</a>
+
+    <p class="pseudo-element">The **first line** of this paragraph is styled differently using a pseudo-element selector.</p>
+
+    <a href="#" target="_blank">This link is styled by an **attribute selector** because it has a `target="_blank"` attribute.</a>
+    <input type="text" placeholder="This input is styled by its type attribute.">
+    <input type="number" placeholder="This input is not styled.">
+
+</body>
+</html>

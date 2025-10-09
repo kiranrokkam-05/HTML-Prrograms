@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>MOCPLAY</title>
+</head>
+<body>
+<h1="centre">WELCOME</h1>
+<p>welcome to <i><b>Aditya university</b></i></p>
+<h2="centre">Log-in</h2>
+<p="centre">Username:</p>
+<p="centre">Password:</p>
+</body>
+</html>

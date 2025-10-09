@@ -1,0 +1,10 @@
+.bg-container{
+   background-color:blue;
+   background-image:url("https://res.cloudinary.com/dvsumlmle/image/upload/v1755075147/css_vzsbwl.jpg");
+   background-size:cover;
+   color:#ffffff;
+   border-radius:12px;
+   text-align:center;
+   height:50vh;
+width:50vw;
+}

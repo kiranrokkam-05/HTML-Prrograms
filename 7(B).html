@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Example</title>
+</head>
+<body>
+	<h1>Window Object Demo</h1>
+	<button onclick="showWindowInfo()">Show Window Info</button>
+	<button onclick="openNewWindow()">Open New Window</button>
+	<button onclick="closeNewWindow()">Close New Window</button>
+	
+	<div id="output"></div>
+
+	<script>
+		let newWin; //to store reference of opened window
+		
+		function showWindowInfo(){
+		//using window properties
+		let width = window.innerWidth;
+		let height = window.innerHeight;
+		let locationHref = window.location.href;
+
+		//Display info
+		document.getElementById("output").innerHTML =
+		"<b>" + "Window Width : " + "</b>" + width + "px<br>" +
+		"<b>" + "Window Height : " + "</b>" + height + "px<br>" +
+		"<b>" + "Current URL : " + "</b>" + locationHref; 
+		}
+
+		function openNewWindow(){
+		
+		//using window open
+		newWin = window.open("https://kresponsive.ccbp.tech","Example","width=400,height=300");
+
+		}
+
+		function closeNewWindow(){
+		  
+		// using window.close()
+		
+		  if(newWin){
+		      newWin.close();
+		  }
+		}
+	</script>
+</body>
+</html>

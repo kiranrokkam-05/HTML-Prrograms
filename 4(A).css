@@ -1,0 +1,77 @@
+/* I. Simple Selectors */
+/* Element Selector: styles all <p> tags */
+p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* ID Selector: styles the single element with id="unique-text" */
+#unique-text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Class Selector: styles all elements with class="simple-text" */
+.simple-text {
+    color: #007bff; /* blue */
+}
+
+/* Group Selector: styles all h2 and h3 elements */
+h2, h3 {
+    text-decoration: underline;
+    color: #28a745; /* green */
+}
+
+/* Universal Selector: styles all elements (be careful with this one!) */
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+/* II. Combinator Selectors */
+/* Descendant Selector: styles <p> elements inside a <div> with class="parent" */
+.parent p {
+    background-color: #ffe4e1; /* Misty Rose */
+}
+
+/* Child Selector: styles <p> elements that are direct children of a <div> with class="parent-child" */
+.parent-child > p {
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Selector: styles a <p> element immediately following an <h2> */
+h2 + p {
+    background-color: #fffacd; /* Lemon Chiffon */
+}
+
+/* General Sibling Selector: styles all <p> elements that are siblings of an <h2> (not necessarily immediately next to it) */
+h2 ~ p {
+    border-bottom: 1px dashed #ccc;
+}
+
+/* III. Pseudo-class Selector */
+/* :hover pseudo-class changes the style when a link is hovered over */
+a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+/* IV. Pseudo-element Selector */
+/* ::first-line pseudo-element styles the first line of a paragraph */
+.pseudo-element::first-line {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* V. Attribute Selector */
+/* [target="_blank"] selector styles any element with this exact attribute-value pair */
+a[target="_blank"] {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* [type="text"] selector styles any input with type="text" */
+input[type="text"] {
+    border: 2px solid #009688; /* Teal */
+}

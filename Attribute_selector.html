@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute Selectors</title>
+    <style>
+        /* Selects input with type="text" */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        /* Selects links that open in new tab */
+        a[target="_blank"] {
+            color: red;
+        }
+
+        /* Selects elements having title attribute */
+        p[title] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Text box (styled)">
+    <input type="password" placeholder="Password box (not styled)">
+    
+    <br><br>
+    <a href="https://www.google.com" target="_blank">Google (opens in new tab)</a>
+    <br>
+    <a href="https://www.aec.edu.in" target="_self">AEC (same tab)</a>
+    
+    <p title="info">This paragraph has a title attribute</p>
+    <p>This paragraph has no title</p>
+</body>
+</html>

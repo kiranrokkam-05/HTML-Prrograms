@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+.para {
+  font-family:"Bree serif",serif;
+  font-size:20px;
+  margin:3px;
+  border-radius:7px;
+}
